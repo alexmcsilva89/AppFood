@@ -1,0 +1,105 @@
+object ViewComponentsCategoria: TViewComponentsCategoria
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 100
+  ClientWidth = 192
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lyPrincipal: TLayout
+    Align = Contents
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 172.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object recCategoria: TRectangle
+      Align = Contents
+      Fill.Color = claWhite
+      Padding.Left = 8.000000000000000000
+      Padding.Top = 8.000000000000000000
+      Padding.Right = 8.000000000000000000
+      Padding.Bottom = 8.000000000000000000
+      Size.Width = 172.000000000000000000
+      Size.Height = 80.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 15.000000000000000000
+      YRadius = 15.000000000000000000
+      object lyImagemCategoria: TLayout
+        Align = Left
+        Padding.Left = 20.000000000000000000
+        Padding.Top = 20.000000000000000000
+        Padding.Right = 20.000000000000000000
+        Padding.Bottom = 20.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object recImagemCategoria: TRectangle
+          Align = Contents
+          Fill.Color = claWhite
+          Padding.Left = 13.000000000000000000
+          Padding.Top = 13.000000000000000000
+          Padding.Right = 13.000000000000000000
+          Padding.Bottom = 13.000000000000000000
+          Size.Width = 76.000000000000000000
+          Size.Height = 64.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claLightgray
+          XRadius = 15.000000000000000000
+          YRadius = 15.000000000000000000
+          object imCategoria: TImage
+            MultiResBitmap.Height = 33
+            MultiResBitmap.Width = 33
+            MultiResBitmap = <
+              item
+              end>
+            Align = Client
+            Size.Width = 50.000000000000000000
+            Size.Height = 38.000000000000000000
+            Size.PlatformDefault = False
+            object FillRGBEffect: TFillRGBEffect
+              Enabled = False
+              Color = xFF203040
+            end
+          end
+        end
+      end
+      object lyLabelCategoria: TLayout
+        Align = Client
+        Padding.Left = 13.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblCategoria: TLabel
+          Align = Client
+          StyledSettings = [Family, Size]
+          Size.Width = 67.000000000000000000
+          Size.Height = 64.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TabOrder = 0
+        end
+      end
+    end
+    object btnCategoria: TSpeedButton
+      Align = Contents
+      Opacity = 0.000000000000000000
+      Size.Width = 172.000000000000000000
+      Size.Height = 80.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+      OnClick = btnCategoriaClick
+    end
+  end
+end

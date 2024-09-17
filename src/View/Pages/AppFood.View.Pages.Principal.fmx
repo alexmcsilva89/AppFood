@@ -1,0 +1,112 @@
+object ViewPagesPrincipal: TViewPagesPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'AppFood'
+  ClientHeight = 684
+  ClientWidth = 984
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object recFundoPrincipal: TRectangle
+    Align = Contents
+    Size.Width = 984.000000000000000000
+    Size.Height = 684.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object lyPrincipal: TLayout
+    Align = Contents
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Size.Width = 944.000000000000000000
+    Size.Height = 674.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lyLabelCategorias: TLayout
+      Align = Top
+      Margins.Left = 12.000000000000000000
+      Position.X = 12.000000000000000000
+      Size.Width = 932.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lblListaDe: TLabel
+        Align = Left
+        StyledSettings = [Family, Style]
+        Size.Width = 74.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.FontColor = xFF2E2E2E
+        Text = 'Lista de '
+        TabOrder = 0
+      end
+      object lblCategorias: TLabel
+        Align = Left
+        StyledSettings = [Family]
+        Position.X = 74.000000000000000000
+        Size.Width = 156.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF2E2E2E
+        Text = 'Categorias'
+        TabOrder = 1
+      end
+    end
+    object lyLabelProdutos: TLayout
+      Align = Top
+      Margins.Left = 12.000000000000000000
+      Position.X = 12.000000000000000000
+      Position.Y = 233.000000000000000000
+      Size.Width = 932.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lblEscolher: TLabel
+        Align = Left
+        StyledSettings = [Family, Style]
+        Size.Width = 79.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.FontColor = xFF2E2E2E
+        Text = 'Escolher'
+        TabOrder = 0
+      end
+      object lblProdutos: TLabel
+        Align = Left
+        StyledSettings = [Family]
+        Position.X = 79.000000000000000000
+        Size.Width = 156.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF2E2E2E
+        Text = 'Produtos'
+        TabOrder = 1
+      end
+    end
+    object lyListaCategorias: TLayout
+      Align = Top
+      Position.Y = 73.000000000000000000
+      Size.Width = 944.000000000000000000
+      Size.Height = 160.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object lyListaProdutos: TLayout
+      Align = Client
+      Size.Width = 944.000000000000000000
+      Size.Height = 368.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+    end
+  end
+end

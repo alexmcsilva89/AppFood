@@ -1,0 +1,98 @@
+object ViewComponentsProduto: TViewComponentsProduto
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 196
+  ClientWidth = 176
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lyPrincipal: TLayout
+    Align = Contents
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 156.000000000000000000
+    Size.Height = 176.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object recFundo: TRectangle
+      Align = Contents
+      Fill.Color = claWhite
+      Size.Width = 156.000000000000000000
+      Size.Height = 176.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object lyImagemProduto: TLayout
+        Align = Top
+        Margins.Left = 7.000000000000000000
+        Margins.Top = 7.000000000000000000
+        Margins.Right = 7.000000000000000000
+        Position.X = 7.000000000000000000
+        Position.Y = 7.000000000000000000
+        Size.Width = 142.000000000000000000
+        Size.Height = 87.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object recImagemProduto: TRectangle
+          Align = Client
+          Fill.Bitmap.WrapMode = TileStretch
+          Fill.Kind = Bitmap
+          Size.Width = 142.000000000000000000
+          Size.Height = 87.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          Stroke.Thickness = 0.000000000000000000
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+        end
+      end
+      object lyInformacoesProduto: TLayout
+        Align = Client
+        Margins.Left = 7.000000000000000000
+        Margins.Right = 7.000000000000000000
+        Margins.Bottom = 7.000000000000000000
+        Size.Width = 142.000000000000000000
+        Size.Height = 75.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblNomeProduto: TLabel
+          Align = Top
+          StyledSettings = [Family, FontColor]
+          Size.Width = 142.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TabOrder = 1
+        end
+        object lblValor: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Position.Y = 40.000000000000000000
+          Size.Width = 142.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFF2877F0
+          TextSettings.VertAlign = Leading
+          TabOrder = 0
+        end
+      end
+    end
+    object btnProduto: TSpeedButton
+      Align = Contents
+      Opacity = 0.000000000000000000
+      Size.Width = 156.000000000000000000
+      Size.Height = 176.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+    end
+  end
+end
