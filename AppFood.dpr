@@ -25,10 +25,8 @@ uses
 {$R *.res}
 
 begin
+  ReportMemoryLeaksOnShutdown := True;
   Application.Initialize;
   Application.CreateForm(TViewPagesPrincipal, ViewPagesPrincipal);
-  Application.CreateForm(TViewComponentsScrollBoxVertical, ViewComponentsScrollBoxVertical);
   Application.Run;
-
-  ReportMemoryLeaksOnShutdown := True;
 end.
