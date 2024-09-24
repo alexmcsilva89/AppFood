@@ -23,7 +23,6 @@ type
     FillRGBEffect: TFillRGBEffect;
     procedure btnCategoriaClick(Sender: TObject);
   private
-    [weak]
     FObserver: iSubject;
     FOnClick: TProc<TObject>;
     FHabilitaFillRGBEffect: Boolean;
